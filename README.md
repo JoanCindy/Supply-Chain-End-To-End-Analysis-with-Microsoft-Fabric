@@ -86,7 +86,6 @@ gold_dim_supplier ← gold_fact_orders → gold_dim_shipping
                       (sku, inspection_results,
                        defect_rates, quality_flag)
 ```
-![Modèle Sémantique]('architecture/Modèle sémantique.png')
 
 ---
 
@@ -170,6 +169,7 @@ Décomposition du end-to-end lead time par segment (inbound / manufacturing / ou
 
 ---
 ## Structure du repository
+
 supply-chain-fabric/
 ├── README.md
 ├── notebooks/
