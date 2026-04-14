@@ -1,7 +1,6 @@
 # Supply-Chain-End-To-End-Analysis-with-Microsoft-Fabric
 Fashion &amp; Beauty Supply Chain Analysis Using Microsoft Fabric &amp; Power BI
 
-# Supply Chain Analytics — Microsoft Fabric End-to-End
 
 > Projet Data Analytics Engineering complet sur Microsoft Fabric : ingestion, transformation, modélisation et dashboard décisionnel sur un dataset supply chain Fashion & Beauty.
 
@@ -87,13 +86,14 @@ gold_dim_supplier ← gold_fact_orders → gold_dim_shipping
                       (sku, inspection_results,
                        defect_rates, quality_flag)
 ```
+![Modèle Sémantique]('architecture/Modèle sémantique.png')
 
 ---
 
 ## Notebooks
 
 ### `01_bronze_exploration`
-- Upload du CSV dans `Files/bronze/supply_chain/`
+- Upload du CSV dans `Files/bronze/`
 - Exploration PySpark (schema, nulls, distributions)
 - Sauvegarde en Delta Table `bronze_supply_chain_raw`
 
@@ -166,13 +166,10 @@ Décomposition du end-to-end lead time par segment (inbound / manufacturing / ou
 `Microsoft Fabric` · `OneLake` · `Lakehouse` · `PySpark` · `SQL Analytics Endpoint`
 `Medallion Architecture` · `Delta Tables` · `Warehouse Fabric` · `Modèle Sémantique`
 `Direct Lake` · `Power BI` · `DAX` · `Modélisation dimensionnelle` · `Data Quality`
-`Supply Chain KPIs` · `End-to-End Lead Time` · `Bottleneck Analysis`
+`Supply Chain KPIs` · `Bottleneck Analysis`
 
 ---
-
 ## Structure du repository
-
-```
 supply-chain-fabric/
 ├── README.md
 ├── notebooks/
@@ -193,8 +190,6 @@ supply-chain-fabric/
 │   └── data_model.png
 └── docs/
     └── data_quality_decisions.md
-```
-
 ---
 
 ## Joan Cindy
