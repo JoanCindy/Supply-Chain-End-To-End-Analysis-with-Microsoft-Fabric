@@ -75,17 +75,8 @@ Power BI Report      (3 pages — Exécutif / Qualité / Logistique)
 
 ### Modèle en étoile
 
-```
-                  gold_dim_product
-                  (sku, product_type, price, availability)
-                          ↑
-gold_dim_supplier ← gold_fact_orders → gold_dim_shipping
-(supplier_name,        (100 lignes)      (shipping_carriers)
- location,                  ↓
- production_volumes)  gold_dim_inspection
-                      (sku, inspection_results,
-                       defect_rates, quality_flag)
-```
+<img width="950" height="503" alt="Modèle sémantique" src="https://github.com/user-attachments/assets/76dd9908-ff85-4374-84f4-a00a0184d792" />
+
 
 ---
 
@@ -168,28 +159,12 @@ Décomposition du end-to-end lead time par segment (inbound / manufacturing / ou
 `Supply Chain KPIs` · `Bottleneck Analysis`
 
 ---
+
 ## Structure du repository
 
-supply-chain-fabric/
-├── README.md
-├── notebooks/
-│   ├── 01_bronze_exploration.ipynb
-│   ├── 02_silver_transformation.ipynb
-│   └── 03_gold_modeling.ipynb
-├── warehouse/
-│   └── create_tables.sql
-├── dax/
-│   └── measures.md
-├── dashboard/
-│   └── screenshots/
-│       ├── page1_vue_executive.png
-│       ├── page2_qualite_defauts.png
-│       └── page3_performance_logistique.png
-├── architecture/
-│   ├── medallion_architecture.png
-│   └── data_model.png
-└── docs/
-    └── data_quality_decisions.md
+<img width="308" height="353" alt="image" src="https://github.com/user-attachments/assets/49fb0fab-8e1d-40bd-af5f-d312d903ac23" />
+
+
 ---
 
 ## Joan Cindy
